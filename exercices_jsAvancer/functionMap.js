@@ -4,6 +4,6 @@ const phones = [
     { name: "iphone B", priceHT: 200 },
   ];
 const tva = .2;
+// const total = phones.map(phone => phone ? isNaN(parseFloat(priceHT) : Math.floor(priceHT * (1 + 0.2) * 100 / 100);
+// console.log(total);
 
-const total = phones.map(phone => phone ? isNaN(parseFloat(priceHT) : Math.floor(priceHT * (1 + 0.2) * 100 / 100);
-console.log(total);
