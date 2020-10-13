@@ -19,5 +19,5 @@ const students = [
     },
   ];
 for(const{name, family} of students){
-console.log("nom :" ,name, " soeur :" ,family.syster);
+console.log("nom :" , name, " soeur :" , family.syster);
 }
