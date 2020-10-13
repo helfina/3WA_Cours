@@ -18,5 +18,6 @@ const students = [
       age: 55,
     },
   ];
-const nom = student.name(students=>({name : students.name, syster : students.syster}));
-console.log(nom);
+for(const{name, family} of students){
+console.log("nom :" ,name, " soeur :" ,family.syster);
+}
