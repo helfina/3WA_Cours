@@ -13,5 +13,8 @@ const populations = [
     { "id": 11, "name": "Isaac" },
     { "id": 12, "name": "Ian" }
 ];
-let newPopulations = populations.map( p => p);
+let newPopulations = populations.map( p => ({...p}));
+newPopulations[0].name = "ALAN";
+newPopulations[12].name = "Matheo";
 console.log(newPopulations);
+console.log(populations);
