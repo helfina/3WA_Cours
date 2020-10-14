@@ -40,5 +40,5 @@ console.log(lenNames);
 for(const len of lenNames){
   console.log(len);
 }
-const tri =populations.filter( pop =>pop.lenName = length);
+const tri =populations.filter( pop =>pop.lenName === leng);
 console.log(tri);
