@@ -23,14 +23,22 @@ const populations = [
     { id: 11, name: "Isaac" },
     { id: 12, name: "Ian" },
   ];
-//recuperer,fusionner,afficher
+// 1
 populations.sort((a, b) => a.name.length - b.name.length);
-  for(const {name} of populations)
+// 2
+  for(const population of populations)
   {
-    if(name.lenght === 0 ) return 'Exeption no notes';
-    const lenName = populations.map(population =>population.name.length);
-    const newPopulations = [...populations,lenName];
-    console.log(newPopulations);
+    //cle cree dinamiquement
+   population['lenName'] = population.name.length;
+  
   }
+//3 
+const groupeName = [];
+const lenNames = new Set(populations.map(population => population.lenName));
+console.log(lenNames);
 
-
+for(const len of lenNames){
+  console.log(len);
+}
+const tri =populations.filter( pop =>pop.lenName = length);
+console.log(tri);
